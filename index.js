@@ -50,6 +50,7 @@ function game(){
     let computerScore = 0;
 
     for(let i=0; i < 5; i++){
+        const playerSelection = prompt("Choose: Rock, paper or scissors?");       
         const computerSelection = computerPlay();
         let result = playRound(playerSelection, computerSelection);
         if (result == 'Computer Wins!'){
@@ -68,5 +69,4 @@ function game(){
     }
 };
 
-const playerSelection = prompt("Choose: Rock, paper or scissors?");
 game();
